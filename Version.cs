@@ -1,4 +1,4 @@
-﻿namespace TFT_Overlay.Utilities
+﻿namespace TFT_Overlay
 {
     class Version
     {

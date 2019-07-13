@@ -11,7 +11,7 @@ namespace TFT_Overlay
     {
         private void AutoUpdater(object sender, StartupEventArgs e)
         {
-            string currentVersion = Version.version;
+            string currentVersion = Utilities.Version.version;
             string version;
 
             using (WebClient client = new WebClient())
@@ -27,7 +27,7 @@ namespace TFT_Overlay
 
                         if (result == MessageBoxResult.Yes)
                         {
-                            string link = "https://github.com/Just2good/TFT-Overlay/releases/download/V" + version + "/TFT.Overlay.V" + version + ".rar";
+                            string link = "https://github.com/Just2good/TFT-Overlay/releases/download/V" + version + "/TFT.Overlay.V" + version + ".zip";
                             ServicePointManager.Expect100Continue = true;
                             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
                             client.DownloadFile(new Uri(link), "TFTOverlay.zip");
