@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Input;
 using TFT_Overlay.Properties;
 using TFT_Overlay.Utilities;
@@ -111,6 +112,7 @@ namespace TFT_Overlay
             ((Control)sender).Cursor = LoLPointer;
             if (CanDrag)
             {
+                base.OnMouseLeftButtonDown(e);
                 this.DragMove();
             }
         }
@@ -246,6 +248,33 @@ namespace TFT_Overlay
         private void LocalizationHelp_Click(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/Just2good/TFT-Overlay/blob/master/Localization.md");
+        }
+
+        private void BackgroundOpacityHandler_Click(object sender, RoutedEventArgs e)
+        {
+            if (sender is MenuItem menuItem)
+            {
+                string header = menuItem.Header.ToString();
+                double opacity = double.Parse(header.Substring(0, header.Length - 1)) / 100;
+
+                Settings.FindAndUpdate("Opacity", opacity);
+            }
+        }
+
+        private void ContextMenu_Click(object sender, RoutedEventArgs e)
+        {
+            var contextMenu = ContextMenuService.GetContextMenu(sender as DependencyObject);
+            if (contextMenu != null)
+            {
+                contextMenu.Placement = PlacementMode.Bottom;
+                contextMenu.PlacementTarget = sender as UIElement;
+                contextMenu.IsOpen = true;
+            }
+        }
+
+        private void Rectangle_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+
         }
     }
 }
