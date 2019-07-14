@@ -1,13 +1,14 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:TFT_Overlay.Resource.Localization"
+                    xmlns:u="clr-namespace:TFT_Overlay.Utilities"
                     xmlns:vm="clr-namespace:TFT_Overlay.ViewModel">
 
     <!--B.F. Sword No Text-->
     <DataTemplate x:Key="BFSword1" DataType="{x:Type vm:MainViewModel}">
         <WrapPanel>
             <Grid>
-                <Rectangle Opacity="{Binding ElementName=OpacitySlider,Path=Value}" Fill="Black" Grid.ColumnSpan="1" Grid.RowSpan="1"></Rectangle>
+                <Border Opacity="{u:SettingBinding Opacity}" Background="#1e2328" CornerRadius="0 0 2 2" Grid.ColumnSpan="1" Grid.RowSpan="1"></Border>
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="40"/>
@@ -38,7 +39,7 @@
                     <!-- Infinity Edge-->
                     <TextBlock Text="+" Grid.Row="0" Grid.Column="1" FontSize="24" Width="20" Height="30" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="LightGoldenrodYellow"></TextBlock>
                     <Rectangle Grid.Row="0" Grid.Column="3" Width="8" Height="38" Fill="#C8AA6D"></Rectangle>
-                    <Image Grid.Row="0" Grid.Column="0" Width="32" Height="32" Source="pack://application:,,,/Images/cstyle/items/BF.png" />
+                    <Image Grid.Row="0" Grid.Column="0" Source="pack://application:,,,/Images/cstyle/items/BF.png" />
                     <Image Grid.Row="0" Grid.Column="2" Source="pack://application:,,,/Images/cstyle/items/BF.png" />
                     <Image Grid.Row="0" Grid.Column="4" Source="pack://application:,,,/Images/cstyle/items/infinity_edge.png">
                         <Image.ToolTip>
@@ -157,7 +158,7 @@
     <DataTemplate x:Key="Recurve1" DataType="{x:Type vm:MainViewModel}">
         <WrapPanel>
             <Grid>
-                <Rectangle Opacity="{Binding ElementName=OpacitySlider,Path=Value}" Fill="Black" Grid.ColumnSpan="1" Grid.RowSpan="1"></Rectangle>
+                <Rectangle Opacity="{Binding ElementName=OpacitySlider,Path=Value}" Fill="#1e2328" Grid.ColumnSpan="1" Grid.RowSpan="1"></Rectangle>
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="40"/>
@@ -307,7 +308,7 @@
     <DataTemplate x:Key="NLRod1" DataType="{x:Type vm:MainViewModel}">
         <WrapPanel>
             <Grid>
-                <Rectangle Opacity="{Binding ElementName=OpacitySlider,Path=Value}" Fill="Black" Grid.ColumnSpan="1" Grid.RowSpan="1"></Rectangle>
+                <Rectangle Opacity="{Binding ElementName=OpacitySlider,Path=Value}" Fill="#1e2328" Grid.ColumnSpan="1" Grid.RowSpan="1"></Rectangle>
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="40"/>
@@ -457,7 +458,7 @@
     <DataTemplate x:Key="Mana1" DataType="{x:Type vm:MainViewModel}">
         <WrapPanel>
             <Grid>
-                <Rectangle Opacity="{Binding ElementName=OpacitySlider,Path=Value}" Fill="Black" Grid.ColumnSpan="1" Grid.RowSpan="1"></Rectangle>
+                <Rectangle Opacity="{Binding ElementName=OpacitySlider,Path=Value}" Fill="#1e2328" Grid.ColumnSpan="1" Grid.RowSpan="1"></Rectangle>
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="40"/>
@@ -607,7 +608,7 @@
     <DataTemplate x:Key="ChainVest1" DataType="{x:Type vm:MainViewModel}">
         <WrapPanel>
             <Grid>
-                <Rectangle Opacity="{Binding ElementName=OpacitySlider,Path=Value}" Fill="Black" Grid.ColumnSpan="1" Grid.RowSpan="1"></Rectangle>
+                <Rectangle Opacity="{Binding ElementName=OpacitySlider,Path=Value}" Fill="#1e2328" Grid.ColumnSpan="1" Grid.RowSpan="1"></Rectangle>
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="40"/>
@@ -757,7 +758,7 @@
     <DataTemplate x:Key="Negatron1" DataType="{x:Type vm:MainViewModel}">
         <WrapPanel>
             <Grid>
-                <Rectangle Opacity="{Binding ElementName=OpacitySlider,Path=Value}" Fill="Black" Grid.ColumnSpan="1" Grid.RowSpan="1"></Rectangle>
+                <Rectangle Opacity="{Binding ElementName=OpacitySlider,Path=Value}" Fill="#1e2328" Grid.ColumnSpan="1" Grid.RowSpan="1"></Rectangle>
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="40"/>
@@ -907,7 +908,7 @@
     <DataTemplate x:Key="Giants1" DataType="{x:Type vm:MainViewModel}">
         <WrapPanel>
             <Grid>
-                <Rectangle Opacity="{Binding ElementName=OpacitySlider,Path=Value}" Fill="Black" Grid.ColumnSpan="1" Grid.RowSpan="1"></Rectangle>
+                <Rectangle Opacity="{Binding ElementName=OpacitySlider,Path=Value}" Fill="#1e2328" Grid.ColumnSpan="1" Grid.RowSpan="1"></Rectangle>
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="40"/>
@@ -1057,7 +1058,7 @@
     <DataTemplate x:Key="Scarf1" DataType="{x:Type vm:MainViewModel}">
         <WrapPanel>
             <Grid>
-                <Rectangle Opacity="{Binding ElementName=OpacitySlider,Path=Value}" Fill="Black" Grid.ColumnSpan="1" Grid.RowSpan="1"></Rectangle>
+                <Rectangle Opacity="{Binding ElementName=OpacitySlider,Path=Value}" Fill="#1e2328" Grid.ColumnSpan="1" Grid.RowSpan="1"></Rectangle>
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="40"/>

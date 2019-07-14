@@ -1,6 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:s="clr-namespace:System;assembly=mscorlib"
+                    xmlns:u="clr-namespace:TFT_Overlay.Utilities"
                     xmlns:vm="clr-namespace:TFT_Overlay.ViewModel">
 
     <!--Origins-->
@@ -8,7 +9,7 @@
         <WrapPanel Orientation="Horizontal">
             <Grid >
                 <Grid.Background>
-                    <SolidColorBrush Color="Black" Opacity="{Binding ElementName=OpacitySlider,Path=Value}"></SolidColorBrush>
+                    <SolidColorBrush Color="#1e2328" Opacity="{u:SettingBinding Opacity}"></SolidColorBrush>
                 </Grid.Background>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="75"></ColumnDefinition>
@@ -477,7 +478,7 @@
         <WrapPanel Orientation="Horizontal">
             <Grid>
                 <Grid.Background>
-                    <SolidColorBrush Color="Black" Opacity="{Binding ElementName=OpacitySlider,Path=Value}"></SolidColorBrush>
+                    <SolidColorBrush Color="#1e2328" Opacity="{u:SettingBinding Opacity}"></SolidColorBrush>
                 </Grid.Background>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="75"></ColumnDefinition>

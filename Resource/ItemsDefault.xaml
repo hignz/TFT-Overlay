@@ -1,13 +1,14 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:s="clr-namespace:System;assembly=mscorlib"
+                    xmlns:u="clr-namespace:TFT_Overlay.Utilities"
                     xmlns:vm="clr-namespace:TFT_Overlay.ViewModel">
 
     <!--B.F. Sword-->
     <DataTemplate x:Key="BFSwordDefault" DataType="{x:Type vm:MainViewModel}">
         <WrapPanel>
             <Grid>
-                <Rectangle Opacity="{Binding ElementName=OpacitySlider,Path=Value}" Fill="Black" Grid.ColumnSpan="1" Grid.RowSpan="1"></Rectangle>
+                <Border Opacity="{u:SettingBinding Opacity}" Background="#1e2328" CornerRadius="0 0 2 2" Grid.ColumnSpan="1" Grid.RowSpan="1"></Border>
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="35"/>

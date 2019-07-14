@@ -1,13 +1,14 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:s="clr-namespace:System;assembly=mscorlib"
+                    xmlns:u="clr-namespace:TFT_Overlay.Utilities"
                     xmlns:vm="clr-namespace:TFT_Overlay.ViewModel">
 
     <!--B.F. Sword-->
     <DataTemplate x:Key="BFSword" DataType="{x:Type vm:MainViewModel}">
         <WrapPanel>
             <Grid>
-                <Rectangle Opacity="{Binding ElementName=OpacitySlider,Path=Value}" Fill="Black" Grid.ColumnSpan="1" Grid.RowSpan="1"></Rectangle>
+                <Border Opacity="{u:SettingBinding Opacity}" Background="#1e2328" CornerRadius="0 0 2 2" Grid.ColumnSpan="1" Grid.RowSpan="1"></Border>
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="0"/>
@@ -111,7 +112,7 @@
     <DataTemplate x:Key="Recurve" DataType="{x:Type vm:MainViewModel}">
         <WrapPanel>
             <Grid>
-                <Rectangle Opacity="{Binding ElementName=OpacitySlider,Path=Value}" Fill="Black" Grid.ColumnSpan="1" Grid.RowSpan="1"></Rectangle>
+                <Border Opacity="{u:SettingBinding Opacity}" Background="#1e2328" CornerRadius="0 0 2 2" Grid.ColumnSpan="1" Grid.RowSpan="1"></Border>
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="0"/>
@@ -215,7 +216,7 @@
     <DataTemplate x:Key="NLRod" DataType="{x:Type vm:MainViewModel}">
         <WrapPanel>
             <Grid>
-                <Rectangle Opacity="{Binding ElementName=OpacitySlider,Path=Value}" Fill="Black" Grid.ColumnSpan="1" Grid.RowSpan="1"></Rectangle>
+                <Border Opacity="{u:SettingBinding Opacity}" Background="#1e2328" CornerRadius="0 0 2 2" Grid.ColumnSpan="1" Grid.RowSpan="1"></Border>
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="0"/>
@@ -319,7 +320,7 @@
     <DataTemplate x:Key="Mana" DataType="{x:Type vm:MainViewModel}">
         <WrapPanel>
             <Grid>
-                <Rectangle Opacity="{Binding ElementName=OpacitySlider,Path=Value}" Fill="Black" Grid.ColumnSpan="1" Grid.RowSpan="1"></Rectangle>
+                <Border Opacity="{u:SettingBinding Opacity}" Background="#1e2328" CornerRadius="0 0 2 2" Grid.ColumnSpan="1" Grid.RowSpan="1"></Border>
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="0"/>
@@ -423,7 +424,7 @@
     <DataTemplate x:Key="ChainVest" DataType="{x:Type vm:MainViewModel}">
         <WrapPanel>
             <Grid>
-                <Rectangle Opacity="{Binding ElementName=OpacitySlider,Path=Value}" Fill="Black" Grid.ColumnSpan="1" Grid.RowSpan="1"></Rectangle>
+                <Border Opacity="{u:SettingBinding Opacity}" Background="#1e2328" CornerRadius="0 0 2 2" Grid.ColumnSpan="1" Grid.RowSpan="1"></Border>
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="0"/>
@@ -527,7 +528,7 @@
     <DataTemplate x:Key="Negatron" DataType="{x:Type vm:MainViewModel}">
         <WrapPanel>
             <Grid>
-                <Rectangle Opacity="{Binding ElementName=OpacitySlider,Path=Value}" Fill="Black" Grid.ColumnSpan="1" Grid.RowSpan="1"></Rectangle>
+                <Border Opacity="{u:SettingBinding Opacity}" Background="#1e2328" CornerRadius="0 0 2 2" Grid.ColumnSpan="1" Grid.RowSpan="1"></Border>
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="0"/>
@@ -631,7 +632,7 @@
     <DataTemplate x:Key="Giants" DataType="{x:Type vm:MainViewModel}">
         <WrapPanel>
             <Grid>
-                <Rectangle Opacity="{Binding ElementName=OpacitySlider,Path=Value}" Fill="Black" Grid.ColumnSpan="1" Grid.RowSpan="1"></Rectangle>
+                <Border Opacity="{u:SettingBinding Opacity}" Background="#1e2328" CornerRadius="0 0 2 2" Grid.ColumnSpan="1" Grid.RowSpan="1"></Border>
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="0"/>
@@ -735,7 +736,7 @@
     <DataTemplate x:Key="Scarf" DataType="{x:Type vm:MainViewModel}">
         <WrapPanel>
             <Grid>
-                <Rectangle Opacity="{Binding ElementName=OpacitySlider,Path=Value}" Fill="Black" Grid.ColumnSpan="1" Grid.RowSpan="1"></Rectangle>
+                <Border Opacity="{u:SettingBinding Opacity}" Background="#1e2328" CornerRadius="0 0 2 2" Grid.ColumnSpan="1" Grid.RowSpan="1"></Border>
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="0"/>
